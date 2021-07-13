@@ -23,7 +23,7 @@ public class DemoController {
 	private DemoService demoService;
 	
 	@PostMapping("/data")
-	public ResponseEntity<Employee> saveData(@RequestBody Employee obj) {
+	public ResponseEntity<Employe> saveData(@RequestBody Employee obj) {
 		return new ResponseEntity<Employee>(demoService.saveDate(obj),HttpStatus.OK);
 	}
 	
